@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hola, Mi Amor</h1>
+        <p>Te hice esta página para recordarte lo mucho que te amo.</p>
+
+        <div class="gallery">
+            <img src="image1.png" alt="Recuerdo 1">
+            <img src="image2.png" alt="Recuerdo 2">
+            <img src="image3.png" alt="Recuerdo 3">
+        </div>
+
+        <div class="message">
+            <p>Eres la persona más maravillosa que conozco y cada día contigo es un regalo. Gracias por estar siempre a mi lado. Te amo más de lo que las palabras pueden expresar.</p>
+        </div>
+
+        <button onclick="openPopup()">Haz clic aquí para una sorpresa</button>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="hidden">
+        <div class="popupContent">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="overlayText">
+                ¡Feliz Día de la Novia! <br> Te Amo <br> 💖
+            </div>
+            <div class="videoWrapper">
+                <iframe src="https://www.youtube.com/embed/XKo13KisXZE?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').classList.remove('hidden');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
